@@ -13,13 +13,8 @@ public class Integral {
     }
 
     public static void main(String[] args) {
-        System.out.println(integrate(new MyMathFunc(), 0, 10));
+        System.out.println(integrate(x -> 1, 0, 10));
     }
 
-    private static class MyMathFunc implements DoubleUnaryOperator {
-        @Override
-        public double applyAsDouble(double x) {
-            return 1;
-        }
-    }
+
 }
